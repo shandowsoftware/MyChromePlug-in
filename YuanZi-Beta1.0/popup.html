@@ -1,0 +1,80 @@
+
+<html>
+  <head>
+    <title>Popup-html</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+      }
+	  
+	  ul li{list-style:none}
+	  div{
+		width:500px;
+		
+	  }
+	  
+
+	  .headImgClass img{
+		margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 120px;
+        height: 120px;	
+	  }
+	  li img{
+		
+	  }
+    </style>
+
+	
+	<script src="jquery.js"></script>
+    <script src="popup.js"></script>
+	
+	<!--这两个可以不用引入,都是园子自身的js,本来是要用园子的js完成更多功能,由于chrome插件不支持<input type="button" onClick="XXX">-->
+	<script src="common.js"></script>		
+	<script src="common_combined.js"></script>
+	<!--<input type="text" id="context_text"/>-->
+	
+  </head>
+  <body background="bg.jpg">
+  
+	<div>
+		
+		<div id="headImg" class="headImgClass" style="left:10px;"></div>
+		<div class="headImgClass">
+			<!--文本框-->
+			<div id="context_show">
+				<textarea id="context_text" rows="4" cols="25" style="width:260;overflow-x:visible;overflow-y:visible;"></textarea>
+			</div>
+			<!--当前发布滴闪-->
+			<div id="nowRelease"> 
+			</div>
+			<input type="button" value="闪一下" id="btn"/>			
+		</div>
+		
+	</div>
+	
+	<div id="context_val">
+		
+	</div>
+	
+	<hr>
+	
+	<div id="test_context" style="font-family:'微软雅黑'">
+	
+	</div>	
+	<div id="feed_body"></div>
+  </body>
+</html>
+
